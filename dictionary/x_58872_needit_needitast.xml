@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element extends="task" label="Needit" max_length="40" name="x_58872_needit_needitast" sizeclass="3" type="collection">
+    <element audit="true" extends="task" label="Needit" max_length="40" name="x_58872_needit_needitast" sizeclass="5" type="collection">
+        <element label="Created" max_length="40" name="u_glide_date_1" type="glide_date"/>
         <element label="When needed" mandatory="true" max_length="40" name="u_glide_date_time_2" type="glide_date_time"/>
         <element label="Requested for" mandatory="true" max_length="32" name="u_requestedfor" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" default="Legal" label="Requested type" mandatory="true" max_length="40" name="u_requestedtype" type="string">
